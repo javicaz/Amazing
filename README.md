@@ -1,58 +1,87 @@
-README.md
+Amazon Product Analysis & Recommendation System
 
-Resources
-Read or watch:
+Welcome to my data science project! In this project, we'll be analyzing a dataset of over 1,000 products listed on Amazon and building a recommendation system for these products.
 
-7 Applications of Deep Learning for Natural Language Processing
-10 Applications of Artificial Neural Networks in Natural Language Processing
-A Gentle Introduction to Calculating the BLEU Score for Text in Python
-Bleu Score
-Evaluating Text Output in NLP: BLEU at your own risk
-ROUGE metric
-Evaluation and Perplexity
-Definitions to skim
+The dataset includes details such as product name, category, price, rating, and user reviews . The goal is to understand customer preferences, identify purchasing patterns, and develop a recommendation system to suggest products to users based on their interests.
 
-BLEU
-ROUGE
-Perplexity
-References:
+The project will consist of the following steps:
 
-BLEU: a Method for Automatic Evaluation of Machine Translation (2002)
-ROUGE: A Package for Automatic Evaluation of Summaries (2004)
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+- Data collection: From the Amazon products dataset from Kaggle.
 
-General
-What are the applications of natural language processing?
-What is a BLEU score?
-What is a ROUGE score?
-What is perplexity?
-When should you use one evaluation metric over another?
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 16.04 LTS using python3 (version 3.5)
-Your files will be executed with numpy (version 1.15)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/env python3
-All of your files must be executable
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should follow the pycodestyle style (version 2.4)
-All your modules should have documentation (python3 -c 'print(__import__("my_module").__doc__)')
-All your classes should have documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
-All your functions (inside and outside a class) should have documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
-You are not allowed to use the nltk module
+- Data preparation: Clean and preprocess the dataset for analysis.
+
+Exploratory data analysis: Analyze the data to understand the distribution of products by categories, customer ratings, and reviews.
+
+Data visualization: Visualize the data to identify trends and patterns.
+
+Simples recommendation system: Develop a recommendation system using machine learning algorithms to suggest products to users based on their interests and previous purchases.
+
+-Data collection
+
+The dataset that will be used has information on over 1000 products sold by Amazon, like their names, categories, prices, ratings, and reviews. We're going to be digging into this data and figuring out what it all means, and how we can use it to help Amazon and its customers.
+
+My girlfriend and myself started to sell on for Amazon, and I hope to use this dataset to analyze this data to understand which products are popular and which aren't, to price and market things better. As we as finding ideal customers and products. 
+
+So, I'm going to be exploring this dataset, doing data analysis and visualization and even building a recommendation system based on the data. 
+
+Features
+
+product_id - Product ID
+
+product_name - Name of the Product
+
+category - Category of the Product
+
+discounted_price - Discounted Price of the Product
+
+actual_price - Actual Price of the Product
+
+discount_percentage - Percentage of Discount for the Product
+
+rating - Rating of the Product
+
+rating_count - Number of people who voted for the Amazon rating
+
+about_product - Description about the Product
+
+user_id - ID of the user who wrote review for the Product
+
+user_name - Name of the user who wrote review for the Product
+
+review_id - ID of the user review
+
+review_title - Short review
+
+review_content - Long review
+
+img_link - Image Link of the Product
+
+product_link - Official Website Link of the Product
+
+To access the dataset, simply go to Kaggle website: https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset
+
+-Data preparation
+Before we dive into the data analysis and visualization, we need to make sure our dataset is clean and properly formatted. This process is called data preparation, and it involves several steps:
+
+-Data Inspection: We'll start by inspecting the dataset to see if there are any missing values, duplicates, or inconsistent data. We'll also check if the data types are correct and make sure the dataset is ready for analysis.
+-Data Cleaning: Next, we'll clean the dataset by removing or correcting any errors, inconsistencies, or irrelevant information. This will make the dataset more reliable and accurate.
+
+-Data Transformation: After cleaning the dataset, we may need to transform the data to make it more useful for analysis. This can include scaling, normalization, or feature engineering.
+
+-Data Saving: Once we've prepared the data, we'll save it in a new file to avoid overwriting the original dataset. This way, we can always go back to the original dataset if we need to.
+
+By following these steps, it is ensured that our data is clean, accurate, and ready to analyze. 
 
 
-https://www.youtube.com/watch?v=SysgYptB19 --> Attention model based out of RNN's
+Test Data & Data visualization
 
-Attention weights of input and output. And how to compute the Attention. Generates EOS and generates "t's" to define the attention that the model should be taking. 
+-Analyze the distribution of products by category using a bar plot.
 
-Attention Model --> https://youtu.be/quoGRI-1l0A?feature=shared
+-Analyze the distribution of customer ratings using a histogram.
 
-The expected outcome and how to teach the model the weight of the model. 
+-Analyze the reviews by creating word clouds or frequency tables of the most common words used in the reviews.
 
-Play with tokenization of the input: 
+-Perform statistical analysis to identify any correlations between different features, such as the relationship between product price and customer rating.
 
-https://theaisummer.com/transformer/
-
+Recommendation system
+As a Machine Learning Engeenier, my goal is to help sellers find products that will perform and customer will love. To achieve this, I'm creating a recommendation system using a dataset from Amazon that contains information about products, reviews, and users.
