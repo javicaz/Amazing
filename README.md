@@ -95,3 +95,9 @@ Recommendation system
 As a Machine Learning Engeenier, my goal is to help sellers find products that will perform and customer will love. To achieve this, I'm creating a recommendation system using a dataset from Amazon that contains information about products, reviews, and users.
 
 <h2>Requierments</h2>
+
+The analysis was develped in Linux Ubuntu 22.04.4 LTS
+
+IDE: Anaconda 
+Tools: Jupyter Notebook
+ 
