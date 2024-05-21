@@ -100,4 +100,29 @@ The analysis was develped in Linux Ubuntu 22.04.4 LTS
 
 IDE: Anaconda 
 Tools: Jupyter Notebook
- 
+
+Pandas 
+Matplotlib
+Seaborn 
+
+Official releases of seaborn can be installed from PyPI:
+
+pip install seaborn
+
+The basic invocation of pip will install seaborn and, if necessary, its mandatory dependencies. It is possible to include optional dependencies that give access to a few advanced features:
+
+pip install seaborn[stats]
+
+The library is also included as part of the Anaconda distribution, and it can be installed with conda:
+
+conda install seaborn
+
+As the main Anaconda repository can be slow to add new releases, you may prefer using the 
+
+conda-forge channel:
+
+conda install seaborn -c conda-forge
+
+Sckitlearn
+
+sklearn.preprocessing 
